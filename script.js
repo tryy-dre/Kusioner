@@ -486,6 +486,48 @@ document.addEventListener('DOMContentLoaded', () => {
     const letterText = document.getElementById('letter-text');
     const closeMessage = document.getElementById('close-message');
 
+    // Audio play/pause button
+    const bgAudio = document.getElementById('bg-audio');
+    if (bgAudio) {
+        const player = document.createElement('div');
+        player.className = 'audio-player';
+
+        const btn = document.createElement('button');
+        btn.className = 'audio-toggle-btn';
+        btn.type = 'button';
+        btn.innerText = '▶';
+
+        const label = document.createElement('span');
+        label.className = 'audio-label';
+        label.textContent = 'Putar musik';
+
+        player.appendChild(btn);
+        player.appendChild(label);
+        document.body.appendChild(player);
+
+        let isPlaying = false;
+
+        const updateBtn = () => {
+            btn.innerText = isPlaying ? '⏸' : '▶';
+            label.textContent = isPlaying ? 'Hentikan musik' : 'Putar musik';
+        };
+
+        btn.addEventListener('click', async () => {
+            try {
+                if (!isPlaying) {
+                    await bgAudio.play();
+                    isPlaying = true;
+                } else {
+                    bgAudio.pause();
+                    isPlaying = false;
+                }
+                updateBtn();
+            } catch (e) {
+                console.error('Gagal memutar audio:', e);
+            }
+        });
+    }
+
     const messages = [
         'Terima kasih sudah bertahan sampai di sini. Semoga tahun baru ini membawa jeda yang damai, ruang untuk sembuh, dan keberanian untuk melangkah lagi.',
         'Di setiap detik yang berlalu, ada doa yang menyertaimu: semoga hatimu tetap hangat, langkahmu dipermudah, dan mimpimu disapa oleh kesempatan baik.',
