@@ -561,7 +561,7 @@ body {
         padding: 1.5rem 1rem;
         justify-content: center;
         padding-top: 2rem;
-        min-height: 600px;
+        min-height: 500px;
     }
     
     .hero-section {
@@ -693,3 +693,4 @@ body {
         font-size: 2.5rem;
     }
 }
+
