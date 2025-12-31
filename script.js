@@ -627,9 +627,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const messages = [
-        'Terima kasih sudah bertahan sampai di sini. Semoga tahun baru ini membawa jeda yang damai, ruang untuk sembuh, dan keberanian untuk melangkah lagi.',
-        'Di setiap detik yang berlalu, ada doa yang menyertaimu: semoga hatimu tetap hangat, langkahmu dipermudah, dan mimpimu disapa oleh kesempatan baik.',
-        'Mari mulai lembaran baru dengan hati ringan: maafkan yang lalu, rangkul yang ada, dan percaya bahwa hal-hal indah sedang menunggu di depan.'
+        'Terima kasih sudah bertahan sampai saat ini, itu semua bukan karna kuat dan gagah kamu melainkan atas kebaikan Tuhan yang selalu menyertaimu disetiap langkahmu. Semoga di tahun yang baru ini membawa kedamaian, kesehatan, dan keberanian untuk melangkah ditahun yang baru ini.',
+        'Kiranya di tahun yang baru ini, Tuhan menuntun setiap langkahmu. Biarlah kehendak-Nya yang terjadi buat kamu, bukan kehendak kamu sendiri. Semoga imanmu semakin diteguhkan, pengharapanmu tidak goyah, dan Kasih Karunia Tuhan Yesus selalu Menyertaimu. Dalam sukacita maupun tantangan, kiranya kamu tetap setia berjalan bersama Tuhan Yesus, karena penyertaan-Nya selalu ada buat kamu.',
+        'Dengan penuh kerendahan hati, kamu melangkah memasuki tahun yang baru. Melepaskan yang telah berlalu, Serta menjalani tahun baru dengan hati yang bersyukur selalu. Dan masa depanmu sepenuhnya percayakanlah kepada penyertaan Tuhan Yesus.'
     ];
 
     const showOverlay = () => {
@@ -683,4 +683,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
 
